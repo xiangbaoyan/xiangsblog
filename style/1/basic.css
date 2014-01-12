@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 1000px;
+    margin: 10px auto;
+}
+
+@font-face {
+    font-family: "laomao";
+    src: url("/font/maozedong.eot") format('embedded-opentype'),
+         url("/font/maozedong.ttf") format('truetype');
+}
+
+.container {
+    width: 500px;
+    margin-left: 0;
+}
+
+.jumbotron {
+    height: 200px;
+    background-color: #ebeeee;
+}
+
+.jumbotron h1 {
+
+    text-shadow: 2px 2px 5px #333;
+    font-family: laomao, Helvetica, Arial, sans-serif;
+}
+
+.jumbotron span{
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 10px;
+}
+
+
+.navbar {
+    height: 30px;
+    margin-top: 80px;
+    font-size: 12px;
+}
+.navbar li{
+    margin-left: 0;
+}
