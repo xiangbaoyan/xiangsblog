@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+div.panel-heading{
+    text-align: center;
+}
+
+
+span.req {
+    font-size: 12px;
+}
+
+
+#radio {
+    font-size: 12px;
+    line-height: 30px;
+    padding-top:5px;
+}
+
+#radio label {
+    vertical-align: middle;
+    margin-left: 15px;
+}

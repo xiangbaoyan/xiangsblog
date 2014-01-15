@@ -1,0 +1,14 @@
+.panel-heading{
+    text-align: center;
+}
+form {
+    margin: 0 auto;
+}
+
+img {
+    cursor: pointer;
+}
+
+.req {
+    font-size: 12px;
+}

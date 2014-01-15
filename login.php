@@ -9,10 +9,34 @@
     require ROOT_PATH.'includes/title.inc.php';
     require ROOT_PATH.'includes/login.func.php';
     if(@$_GET['action']=='login'){
-        echo $_SESSION['code'];
         checkCode($_POST['yzm'],$_SESSION['code']);
-        $userName = $_POST['userName'];
-        $saveTime = checkTime($_POST['saveTime']);
+        $_clean = array();
+        $_clean['userName'] = $_POST['userName'];
+        $_clean['password'] = $_POST['password'];
+        $_clean['saveTime'] = checkTime($_POST['saveTime']);
+
+        $sql = "SELECT tg_userName,tg_uniqid
+                FROM tg_user where tg_userName='".$_clean['userName']."'
+                AND tg_password ='".$_clean['password']."'";
+        include ROOT_PATH.'includes/mysql.fun.php';
+        define('DB_HOST','localhost');
+        define('DB_USER','root');
+        define('DB_PASSWORD','');
+        define('DB_NAME','testguest');
+        con_mysql();
+        select_db();
+        select_names();
+        if($rows = fetch_array($sql)){
+            con_close();
+            session_destroy();
+            _setCookies($rows['tg_userName'],$rows['tg_uniquid'],$_clean['saveTime']);
+            jumpUrl(null,"index.php");
+        }else{
+            con_close();
+            session_destroy();
+            jumpUrl("用户名或者密码不正确","login.php");
+        };
+
     }
     ?>
     <script src="js/login.js"></script>
