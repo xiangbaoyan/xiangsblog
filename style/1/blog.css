@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+body {
+}
+dl {
+   text-align: center;
+   width:150px;
+    float:left;
+    margin-left: 40px;
+}
+
+
+dd.btn{
+    float:left;
+    width:75px;
+    font-size: 12px;
+    padding-left: 16px;
+}
+
+dd.message{
+    background: url(../../images/x1.gif) no-repeat 3px ;
+}
+dd.friend{
+    background: url(../../images/x2.gif) no-repeat left ;
+}
+dd.guest{
+    background: url(../../images/x3.gif) no-repeat 3px ;
+}
+dd.flower{
+    background: url(../../images/x4.gif) no-repeat left ;
+}
+
+dd.user {
+    float:none;
+    font-size: 15px;
+}
+
+
+div.page {
+    text-align: center;
+}

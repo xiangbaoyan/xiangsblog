@@ -15,6 +15,22 @@ if(PHP_VERSION < '5.3.0'){
 
 define('GPC',get_magic_quotes_gpc());
 require ROOT_PATH."includes/global.func.php";
+
 define('START_TIME',_runtime());
+include ROOT_PATH.'includes/mysql.fun.php';
+define('DB_HOST','localhost');
+define('DB_USER','root');
+define('DB_PASSWORD','');
+define('DB_NAME','testguest');
+
+
+
+
+con_mysql();
+select_names();
+select_db();
+
+
+
 ?>
 

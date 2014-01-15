@@ -19,21 +19,12 @@
         $_clean['active'] = _sha_code();
         $_clean['question']= $_POST['question'];
         $_clean['answer']= $_POST['answer'];
-        $_clean['QQ']= $_POST['QQ'];
-        $_clean['email']= $_POST['email'];
-
-
+        $_clean['QQ'] = $_POST['QQ'];
+        $_clean['email'] = $_POST['email'];
+        $_clean['face'] = $_POST['face'];
         /**
          * 连接数据库
          */
-        include ROOT_PATH.'includes/mysql.fun.php';
-        define('DB_HOST','localhost');
-        define('DB_USER','root');
-        define('DB_PASSWORD','');
-        define('DB_NAME','testguest');
-        con_mysql();
-        select_db();
-        select_names();
         is_repeat("select tg_userName from tg_user where tg_userName = '".$_clean['userName']."'","此用户名已经存在");
 
         query(
@@ -45,7 +36,8 @@
                                         tg_question,
                                         tg_answere,
                                         tg_email,
-                                        tg_qq)
+                                        tg_qq,
+                                        tg_face)
                                 VALUES (
                                         '{$_clean['unicode']}',
                                         '{$_clean['active']}',
@@ -54,7 +46,8 @@
                                         '{$_clean['question']}',
                                         '{$_clean['answer']}',
                                         '{$_clean['email']}',
-                                        '{$_clean['QQ']}'
+                                        '{$_clean['QQ']}',
+                                        '{$_clean['face']}'
                                 );"
         );
         con_close();
@@ -139,7 +132,7 @@
                     </div>
 
                     <div class="row">
-                        <input type="text" name="face">
+                        <input type="text" name="face" value="face/m01.gif">
                         <img id="faceImg" onclick="window.open('face.php','face','width=400,height=400,top=0,left=0,scrollbars=1')" class="col-md-2 col-md-offset-5" src="face/m01.gif" alt="头像选择"/>
                     </div>
 

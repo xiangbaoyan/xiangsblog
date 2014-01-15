@@ -2,6 +2,9 @@
 <html>
 <head>
     <?php
+    if(!!@$_COOKIE['userName']){
+        exit("请先退出再登录");
+    }
     session_start();
     define('IN_TG',true);
     define('SCRIPT','login');
@@ -18,14 +21,7 @@
         $sql = "SELECT tg_userName,tg_uniqid
                 FROM tg_user where tg_userName='".$_clean['userName']."'
                 AND tg_password ='".$_clean['password']."'";
-        include ROOT_PATH.'includes/mysql.fun.php';
-        define('DB_HOST','localhost');
-        define('DB_USER','root');
-        define('DB_PASSWORD','');
-        define('DB_NAME','testguest');
-        con_mysql();
-        select_db();
-        select_names();
+
         if($rows = fetch_array($sql)){
             con_close();
             session_destroy();

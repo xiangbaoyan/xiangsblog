@@ -17,9 +17,10 @@
                 <?php
                     if(@$_COOKIE['userName']){?>
                 <li><a href="index.php">首页</a></li>
-                <li><a href="#"><?php echo $_COOKIE['userName']?>的个人中心</a></li>
+                <li><a href="member.php"><?php echo $_COOKIE['userName']?>的个人中心</a></li>
                 <li><a href="#">风格</a></li>
                 <li><a href="#">管理</a></li>
+                <li><a href="blog.php">博友</a></li>
                 <li><a href="logOut.php">退出</a></li>
                 <?php }else{ ?>
                 <li><a href="index.php">首页</a></li>
@@ -27,6 +28,7 @@
                 <li><a href="login.php">登录</a></li>
                 <li><a href="#">风格</a></li>
                 <li><a href="#">管理</a></li>
+                <li><a href="blog.php">博友</a></li>
                 <?php   }?>
 
 

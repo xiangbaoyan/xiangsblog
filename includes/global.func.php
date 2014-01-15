@@ -98,7 +98,6 @@ function _sha_code(){
 function jumpUrl($info,$url){
     if($info){
         echo "<script type='text/javascript'>alert('$info');</script>";
-        exit();
     }else{
         header("location:$url");
     }

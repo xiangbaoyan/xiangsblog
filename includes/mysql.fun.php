@@ -18,7 +18,7 @@
     }
 
     function select_names(){
-        if(!mysql_query('SET NAMES UTF8')){
+        if(!mysql_query('SET NAMES UTF8;')){
             exit('字符集错误');
         }
     }
