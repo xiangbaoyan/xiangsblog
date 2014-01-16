@@ -22,6 +22,7 @@
         $_clean['QQ'] = $_POST['QQ'];
         $_clean['email'] = $_POST['email'];
         $_clean['face'] = $_POST['face'];
+        $_clean['level'] = 0;
         /**
          * 连接数据库
          */
@@ -37,7 +38,10 @@
                                         tg_answere,
                                         tg_email,
                                         tg_qq,
-                                        tg_face)
+                                        tg_face,
+                                        tg_reg_time,
+                                        tg_last_time,
+                                        tg_level)
                                 VALUES (
                                         '{$_clean['unicode']}',
                                         '{$_clean['active']}',
@@ -47,12 +51,15 @@
                                         '{$_clean['answer']}',
                                         '{$_clean['email']}',
                                         '{$_clean['QQ']}',
-                                        '{$_clean['face']}'
+                                        '{$_clean['face']}',
+                                        NOW(),
+                                        NOW(),
+                                        '{$_clean['level']}'
                                 );"
         );
         con_close();
 
-        jumpIndex();
+        jumpUrl("注册成功",'index.php');
 
     }else{
         $_SESSION['uni'] = $uni = md5(uniqid(rand(),true));

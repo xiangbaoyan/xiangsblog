@@ -30,7 +30,10 @@ for($i=1;$i<50;$i++){
                                         tg_answere,
                                         tg_email,
                                         tg_qq,
-                                        tg_face)
+                                        tg_face,
+                                        tg_reg_time,
+                                        tg_last_time,
+                                        tg_level)
                                 VALUES (
                                         '{$_clean['unicode']}',
                                         '{$_clean['active']}',
@@ -41,12 +44,13 @@ for($i=1;$i<50;$i++){
                                         '{$_clean['answer']}',
                                         '{$_clean['email']}',
                                         '{$_clean['QQ']}',
-                                        '{$_clean['face']}'
+                                        '{$_clean['face']}',
+                                        NOW(),
+                                        NOW(),
+                                        '0'
                                 );"
     );
-
 }
-
 con_close();
 
 

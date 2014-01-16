@@ -1,2 +1,20 @@
 @CHARSET "UTF-8";
 
+div {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+#info ul {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#info ul li{
+    line-height: 50px;
+    text-align: left;
+    border-bottom-style: ridge ;
+}

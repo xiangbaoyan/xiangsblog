@@ -21,22 +21,54 @@ require dirname(__FILE__).'/includes/common.inc.php';
 <?php
 require ROOT_PATH.'includes/header.inc.php';
 ?>
-    <div class="row">
-        <div class="col-md-5 ">
-            <div class="panel panel-default" id="user">
-                <div class="panel-heading">中心导航</div>
-                <div class="panel-body">
-                    <div class="panel panel-default" id="user">
-                                <div class="panel-heading">账号管理</div>
-                                <div class="panel-body">
 
-                                </div>
-                    </div>
-                </div>
+<div class="row">
+    <?php
+    require ROOT_PATH.'includes/member.inc.php';
+
+
+    $row = fetch_array("select * from tg_user;");
+    $_html = array();
+    $_html['userName'] = $row["tg_userName"];
+    $_html['question'] = $row["tg_question"];
+    $_html['sex'] = $row["tg_sex"];
+    $_html['face'] = $row["tg_face"];
+    $_html['qq'] = $row["tg_qq"];
+    $_html['email'] = $row["tg_email"];
+    $_html['reg_time'] = $row["tg_reg_time"];
+
+    switch($row['tg_level']){
+        case '0':
+            $_html['level'] = '普通会员';break;
+        case '1':
+            $_html['level'] = '管理员';break;
+        default:
+            $_html['level'] = '出错';
+    };
+
+    $_html = renHtml($_html);
+    ?>
+
+    <div class="col-md-7 ">
+        <div class="panel panel-default">
+            <div class="panel-heading">会员管理中心</div>
+            <div class="panel-body" id="info">
+                <ul>
+                    <li>用户名:<span><?php echo $_html['userName']?></span></li>
+                    <li>性别: <span><?php echo $_html['sex']?></span></li>
+                    <li>头像: <span><img src="<?php echo $_html['face']?>.gif" alt="<?php echo $_html['face']?>"/></span></li>
+                    <li>电子邮件: <span><?php echo $_html['email']?></span></li>
+                    <li>Q Q: <span><?php echo $_html['qq']?></span></li>
+                    <li>注册时间: <span><?php echo $_html['reg_time']?></span></li>
+                    <li>身份: <span><?php echo $_html['level']?></span></li>
+                </ul>
+                
             </div>
-
         </div>
     </div>
+
+
+</div>
 
 
 

@@ -108,4 +108,16 @@ function test(){
 }
 
 
+
+function renHtml($str){
+    if(is_array($str)){
+        foreach($str as $key => $value){
+           $str[$key] = renHtml($value);
+        }
+    }else{
+        htmlspecialchars($str);
+    }
+    return $str;
+}
+
 ?>

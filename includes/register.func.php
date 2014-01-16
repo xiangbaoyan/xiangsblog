@@ -19,7 +19,6 @@ function checkUserName($str,$min,$max){
     return null;
 };
 
-
 function checkUni($ses,$inp){
     if($ses != $inp){
         _alert_back("唯一标识符不正确");

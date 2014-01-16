@@ -10,8 +10,9 @@ body {
 
 @font-face {
     font-family: "laomao";
-    src: url("/font/maozedong.eot") format('embedded-opentype'),
-         url("/font/maozedong.ttf") format('truetype');
+    src: url("/font/maozedong.woff");
+    /*src: url("/font/maozedong.eot") format('embedded-opentype'),*/
+         /*url("/font/maozedong.ttf") format('truetype');*/
 }
 
 .container {
