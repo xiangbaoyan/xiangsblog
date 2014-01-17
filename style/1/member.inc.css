@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+div {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.inc {
+    font-weight: bolder;
+}

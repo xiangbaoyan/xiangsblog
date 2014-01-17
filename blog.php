@@ -6,16 +6,14 @@ require dirname(__FILE__)."/includes/common.inc.php";
 ?>
 <html>
 <head>
-    <title></title>
+    <title>博友列表</title>
     <?php require ROOT_PATH."includes/title.inc.php" ?>
+    <script type="text/javascript" src="js/blog.js"></script>
 </head>
 <body>
-
 <?php
 require ROOT_PATH."includes/header.inc.php";
-
 ?>
-
 
 <div class="show">
     <?php
@@ -41,7 +39,7 @@ require ROOT_PATH."includes/header.inc.php";
         <dl>
             <dd class="user"><?php echo $row['tg_userName'] ?>(<?php echo $row['tg_sex'] ?>)</dd>
             <dt><img src="<?php echo $row['tg_face'].'.gif'; ?>" alt="<?php echo $row['tg_face']; ?>"></dt>
-            <dd class="message btn">发消息</dd>
+            <dd class="message btn" >发消息</dd>
             <dd class="friend btn">加为好友</dd>
             <dd class="guest btn">写留言</dd>
             <dd class="flower btn">给他送花</dd>

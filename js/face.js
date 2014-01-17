@@ -9,7 +9,7 @@ window.onload = function(){
 
 function _opener(src){
     var faceImg = opener.document.getElementById('faceImg');
-    opener.document.register.face.value = src ;
+    opener.document.myform.face.value = src ;
     faceImg.src = src;
 }
 

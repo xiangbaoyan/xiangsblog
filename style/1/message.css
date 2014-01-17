@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+
+@font-face {
+    font-family: "laomao";
+    src: url("/font/maozedong.woff");
+}
+
+body{
+    width: 400px;
+}
+
+div.pager-header{
+    margin:0 20px 0 20px;
+    text-align: center;
+    background-color: gray;
+    font-family: laomao, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+form {
+    margin: 10px 0 0 20px;
+}
+
+#verify label{
+    margin-top: 5px;
+}

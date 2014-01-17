@@ -23,8 +23,6 @@
         }
     }
 
-
-
     function query($sql){
         if(!$result = mysql_query($sql)){
             exit(mysql_error());
@@ -36,13 +34,13 @@
         return mysql_fetch_array(query($sql),MYSQL_ASSOC);
     }
 
-
     function is_repeat($sql,$info){
         if(fetch_array($sql)){
             _alert_back($info);
         }
 
     }
+
     function con_close(){
         if(!mysql_close()){
             exit("数据库关闭失败");

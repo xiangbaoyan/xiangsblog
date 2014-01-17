@@ -1,6 +1,5 @@
 <?php
 
-
 function clearCookie(){
     setcookie('userName','',time()-1);
     setcookie('uniqid','',time()-1);
@@ -9,19 +8,16 @@ function clearCookie(){
 }
 
 function checkCode($str,$ses){
-
     if($str != $ses){
         _alert_back('验证码出错');
     }
 }
-
 
 function login_state(){
     if(isset($_COOKIE['userName'])){
         _alert_back("用户登录状态，无法操作");
     }
 }
-
 
 function _runtime(){
 
@@ -32,14 +28,23 @@ function _runtime(){
 
 function _mysql_string($str){
     if(!GPC){
-        return mysql_real_escape_string($str);
+        if(is_array($str)){
+            foreach($str as $key=>$value){
+            $str[$key] = _mysql_string($value);
+            }
+        }else{
+            $str = mysql_real_escape_string($str);
+        };
+
     }
     return $str;
 }
 
 function _alert_back($info){
     echo "<script>alert('{$info}');history.back();</script>;";
+    exit();
 }
+
 function _code(){
     $str = '';
     for($i=0;$i<4;$i++)
@@ -94,10 +99,14 @@ function _sha_code(){
     return sha1(uniqid(rand(),true));
 }
 
-
+/**
+ * 带信息跳到指定页面
+ * 弹出信息@param $info
+ * 跳到的网址@param $url
+ */
 function jumpUrl($info,$url){
     if($info){
-        echo "<script type='text/javascript'>alert('$info');</script>";
+        echo "<script type='text/javascript'>alert('$info');location.href='{$url}';</script>";
     }else{
         header("location:$url");
     }
@@ -106,8 +115,6 @@ function jumpUrl($info,$url){
 function test(){
     echo 'wocao ';
 }
-
-
 
 function renHtml($str){
     if(is_array($str)){
@@ -120,4 +127,13 @@ function renHtml($str){
     return $str;
 }
 
+function log_local($str){
+    file_put_contents('log_local.text',$str);
+}
+
+function _session_destroy() {
+    if (session_start()) {
+        session_destroy();
+    }
+}
 ?>

@@ -21,8 +21,9 @@
         $_clean['answer']= $_POST['answer'];
         $_clean['QQ'] = $_POST['QQ'];
         $_clean['email'] = $_POST['email'];
-        $_clean['face'] = $_POST['face'];
+        $_clean['face'] = str_replace(".gif","",$_POST['face']);
         $_clean['level'] = 0;
+        $_clean['sex']= $_POST['sex'];
         /**
          * 连接数据库
          */
@@ -31,6 +32,7 @@
         query(
             "INSERT INTO tg_user (
                                         tg_uniqid,
+                                        tg_sex,
                                         tg_active,
                                         tg_username,
                                         tg_password,
@@ -44,6 +46,7 @@
                                         tg_level)
                                 VALUES (
                                         '{$_clean['unicode']}',
+                                        '{$_clean['sex']}',
                                         '{$_clean['active']}',
                                         '{$_clean['userName']}',
                                         '{$_clean['password']}',
@@ -83,7 +86,7 @@
               <div class="panel-heading">用户注册</div>
               <div class="panel-body">
 
-                  <form class="form-horizontal" role="form" name="register" method="post" action="register.php?action=register">
+                  <form class="form-horizontal" role="form" name="myform" method="post" action="register.php?action=register">
                       <input type="hidden" name='uni' value="<?php echo $uni ?>">
                       <div class="form-group">
                           <label for="userName" class="col-sm-2 col-sm-offset-2 control-label">用户名:</label>
@@ -139,7 +142,7 @@
                     </div>
 
                     <div class="row">
-                        <input type="text" name="face" value="face/m01.gif">
+                        <input type="text" name="face" value="face/m01">
                         <img id="faceImg" onclick="window.open('face.php','face','width=400,height=400,top=0,left=0,scrollbars=1')" class="col-md-2 col-md-offset-5" src="face/m01.gif" alt="头像选择"/>
                     </div>
 

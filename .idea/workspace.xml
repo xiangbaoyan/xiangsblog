@@ -2,20 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f0e6865-a3b8-4e23-8489-2c4457a69522" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font/maozedong.woff" />
-      <change type="DELETED" beforePath="G:\sync\sync\wamp\www\xiangsblog\font\maozedong.eot" afterPath="" />
-      <change type="DELETED" beforePath="G:\sync\sync\wamp\www\xiangsblog\font\maozedong.ttf" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/blog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/check.inc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/insMes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/1/member.inc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/1/member_message.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/member_message.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/1/member_message_detail.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/member_message_detail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/1/member_modify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/member_modify.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/1/message.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/message.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font/maozedong.woff" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/1/basic.css" afterPath="$PROJECT_DIR$/style/1/basic.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.php" afterPath="$PROJECT_DIR$/blog.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/common.inc.php" afterPath="$PROJECT_DIR$/includes/common.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/face.js" afterPath="$PROJECT_DIR$/js/face.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/global.func.php" afterPath="$PROJECT_DIR$/includes/global.func.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/insert.php" afterPath="$PROJECT_DIR$/insert.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/1/member.css" afterPath="$PROJECT_DIR$/style/1/member.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/member.inc.php" afterPath="$PROJECT_DIR$/includes/member.inc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member.php" afterPath="$PROJECT_DIR$/member.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/register.func.php" afterPath="$PROJECT_DIR$/includes/register.func.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/mysql.fun.php" afterPath="$PROJECT_DIR$/includes/mysql.fun.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register.php" afterPath="$PROJECT_DIR$/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="G:\sync\sync\wamp\www\xiangsblog\style\1\index.css" afterPath="$PROJECT_DIR$/error.php" />
     </list>
     <ignored path="xiangsblog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +52,29 @@
     <favorites_list name="xiangsblog" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="member_message.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/member_message.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="102" column="50" selection-start="3690" selection-end="3690" vertical-scroll-proportion="0.60714287" vertical-offset="1836" max-vertical-offset="2640">
+              <folding>
+                <marker date="1389977210570" expanded="true" signature="664:816" placeholder="SELECT tg_id..tg_message..." />
+                <marker date="1389977210570" expanded="true" signature="1147:1508" placeholder="SELECT tg_fr..tg_message..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="member_message.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style/1/member_message.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="286">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -54,12 +88,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/style/1/index.css" />
-        <option value="$PROJECT_DIR$/includes/footer.inc.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/includes/title.inc.php" />
         <option value="$PROJECT_DIR$/style/1/face.css" />
         <option value="$PROJECT_DIR$/face.php" />
-        <option value="$PROJECT_DIR$/js/face.js" />
         <option value="$PROJECT_DIR$/code.php" />
         <option value="$PROJECT_DIR$/style/1/register.css" />
         <option value="$PROJECT_DIR$/js/login.js" />
@@ -70,21 +102,37 @@
         <option value="dbtable:/a7455e37/c3fc0a5f-c4cf-43a1-8a72-d930d27a36b2/testguest..tg_user" />
         <option value="$PROJECT_DIR$/delete.php" />
         <option value="$PROJECT_DIR$/style/1/blog.css" />
-        <option value="$PROJECT_DIR$/blog.php" />
         <option value="$PROJECT_DIR$/includes/header.inc.php" />
-        <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/style/1/basic.css" />
-        <option value="$PROJECT_DIR$/includes/mysql.fun.php" />
         <option value="$PROJECT_DIR$/common.inc.php" />
-        <option value="$PROJECT_DIR$/includes/common.inc.php" />
-        <option value="$PROJECT_DIR$/style/1/member.css" />
-        <option value="$PROJECT_DIR$/includes/member.inc.php" />
-        <option value="$PROJECT_DIR$/includes/global.func.php" />
         <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/insert.php" />
         <option value="$PROJECT_DIR$/includes/register.func.php" />
+        <option value="$PROJECT_DIR$/style/1/member.css" />
+        <option value="$PROJECT_DIR$/style/1/member.inc.css" />
+        <option value="$PROJECT_DIR$/style/1/member_modify.css" />
+        <option value="$PROJECT_DIR$/error.php" />
+        <option value="$PROJECT_DIR$/includes/mysql.fun.php" />
+        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/member.php" />
+        <option value="$PROJECT_DIR$/js/face.js" />
+        <option value="$PROJECT_DIR$/register.php" />
+        <option value="$PROJECT_DIR$/member_modify.php" />
+        <option value="$PROJECT_DIR$/blog.php" />
+        <option value="$PROJECT_DIR$/js/blog.js" />
+        <option value="$PROJECT_DIR$/style/1/message.css" />
+        <option value="$PROJECT_DIR$/includes/check.inc.php" />
+        <option value="$PROJECT_DIR$/log_local.text" />
+        <option value="$PROJECT_DIR$/includes/footer.inc.php" />
+        <option value="$PROJECT_DIR$/style/1/basic.css" />
+        <option value="$PROJECT_DIR$/includes/member.inc.php" />
+        <option value="$PROJECT_DIR$/message.php" />
+        <option value="$PROJECT_DIR$/style/1/member_message_detail.css" />
+        <option value="$PROJECT_DIR$/includes/common.inc.php" />
+        <option value="$PROJECT_DIR$/includes/global.func.php" />
+        <option value="$PROJECT_DIR$/member_message_detail.php" />
+        <option value="$PROJECT_DIR$/insMes.php" />
+        <option value="$PROJECT_DIR$/style/1/member_message.css" />
+        <option value="$PROJECT_DIR$/member_message.php" />
       </list>
     </option>
   </component>
@@ -126,6 +174,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -154,17 +203,76 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiangsblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiangsblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiangsblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiangsblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiangsblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiangsblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiangsblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiangsblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.lastSelected" value="editing.templates" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -246,12 +354,16 @@
       <created>1389783947782</created>
       <updated>1389783947782</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial commit&#10;">
+      <created>1389842137964</created>
+      <updated>1389842137964</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -259,7 +371,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27847221" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16319445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -267,7 +379,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10239362" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -291,98 +403,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit&#10;" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/common.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="30" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="1034">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="9" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="176" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="64" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="3344">
-          <folding>
-            <marker date="1389841203278" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1389841203278" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/global.func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="28" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1606">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/register.func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="660" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/1/basic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="21" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="1298" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/1/register.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="110" max-vertical-offset="440" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1298" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="36" selection-start="3370" selection-end="3370" vertical-scroll-proportion="0.0" vertical-offset="1694" max-vertical-offset="2090">
-          <folding>
-            <marker date="1389841203278" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1389841203278" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/1/register.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="1" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="110" max-vertical-offset="242" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/1/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="132" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="39" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/1/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="132" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/1/face.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="10" selection-start="183" selection-end="194" vertical-scroll-proportion="0.61452514" vertical-offset="0" max-vertical-offset="716" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="745" column="9" selection-start="24076" selection-end="24076" vertical-scroll-proportion="0.3482143" vertical-offset="16156" max-vertical-offset="24244" />
@@ -403,62 +428,22 @@
         <state line="19" column="34" selection-start="390" selection-end="392" vertical-scroll-proportion="0.39477977" vertical-offset="0" max-vertical-offset="4730" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/title.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="779" selection-end="779" vertical-scroll-proportion="0.58928573" vertical-offset="0" max-vertical-offset="672" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/1/register.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="940" column="29" selection-start="24949" selection-end="24968" vertical-scroll-proportion="0.3482143" vertical-offset="20446" max-vertical-offset="23342" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="29" selection-start="679" selection-end="679" vertical-scroll-proportion="0.5083799" vertical-offset="208" max-vertical-offset="924" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/opener.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="2" selection-start="210" selection-end="210" vertical-scroll-proportion="0.24581006" vertical-offset="0" max-vertical-offset="716" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/face.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="365" selection-end="365" vertical-scroll-proportion="0.46089387" vertical-offset="0" max-vertical-offset="716" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/footer.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.51386863" vertical-offset="0" max-vertical-offset="685" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/x1.gif">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/a7455e37/c3fc0a5f-c4cf-43a1-8a72-d930d27a36b2/testguest..tg_user">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="132" />
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="107" selection-end="107" vertical-scroll-proportion="0.19270073" vertical-offset="0" max-vertical-offset="685" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logOut.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="-4.2580647" vertical-offset="0" max-vertical-offset="264" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/delete.php">
@@ -473,19 +458,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/1/blog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="22" selection-start="570" selection-end="570" vertical-scroll-proportion="0.7849162" vertical-offset="296" max-vertical-offset="1012" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/1/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="1" selection-start="99" selection-end="99" vertical-scroll-proportion="0.27653632" vertical-offset="0" max-vertical-offset="716" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/login.func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="488" selection-end="488" vertical-scroll-proportion="0.7751825" vertical-offset="19" max-vertical-offset="1034" />
+        <state line="9" column="1" selection-start="99" selection-end="99" vertical-scroll-proportion="0.27653632" vertical-offset="0" max-vertical-offset="716">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/session.php">
@@ -493,107 +470,322 @@
         <state line="172" column="9" selection-start="5908" selection-end="5908" vertical-scroll-proportion="0.3482143" vertical-offset="3550" max-vertical-offset="8470" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog.php">
+    <entry file="file://$PROJECT_DIR$/style/1/register.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="18" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.5744048" vertical-offset="714" max-vertical-offset="1716" />
+        <state line="10" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.30726257" vertical-offset="0" max-vertical-offset="716">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/js/opener.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="14" selection-start="887" selection-end="887" vertical-scroll-proportion="0.64671534" vertical-offset="327" max-vertical-offset="1078" />
+        <state line="8" column="2" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="308" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/1/basic.css">
+    <entry file="file://$PROJECT_DIR$/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="1" selection-start="88" selection-end="88" vertical-scroll-proportion="0.24581006" vertical-offset="0" max-vertical-offset="1320" />
+        <state line="26" column="29" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="924" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/header.inc.php">
+    <entry file="file://$PROJECT_DIR$/js/face.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="32" selection-start="566" selection-end="566" vertical-scroll-proportion="0.6220238" vertical-offset="0" max-vertical-offset="946" />
+        <state line="11" column="26" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/common.inc.php">
+    <entry file="file://$PROJECT_DIR$/member_modify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="30" selection-start="453" selection-end="453" vertical-scroll-proportion="0.6145985" vertical-offset="85" max-vertical-offset="1034">
+        <state line="114" column="46" selection-start="3756" selection-end="3756" vertical-scroll-proportion="-80.90323" vertical-offset="0" max-vertical-offset="4026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1156" column="7" selection-start="17347" selection-end="17347" vertical-scroll-proportion="0.3392" vertical-offset="25220" max-vertical-offset="83886">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="9" selection-start="49" selection-end="49" vertical-scroll-proportion="-1.2440476" vertical-offset="924" max-vertical-offset="2310">
+        <state line="92" column="38" selection-start="3648" selection-end="3648" vertical-scroll-proportion="0.19333333" vertical-offset="1908" max-vertical-offset="2508">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/mysql.fun.php">
+    <entry file="file://$PROJECT_DIR$/js/blog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="88" max-vertical-offset="1342">
+        <state line="16" column="0" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="484" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/register.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="2" selection-start="389" selection-end="389" vertical-scroll-proportion="-8.612904" vertical-offset="151" max-vertical-offset="836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/login.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="22" selection-start="511" selection-end="511" vertical-scroll-proportion="0.3708029" vertical-offset="318" max-vertical-offset="1034" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/1/message.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="14" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="726">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="385" column="9" selection-start="9603" selection-end="9603" vertical-scroll-proportion="0.3482143" vertical-offset="8236" max-vertical-offset="23342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/1/blog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="22" selection-start="570" selection-end="570" vertical-scroll-proportion="1.198324" vertical-offset="0" max-vertical-offset="1012">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="14" selection-start="887" selection-end="887" vertical-scroll-proportion="-18.451612" vertical-offset="198" max-vertical-offset="1078">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logOut.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.19270073" vertical-offset="0" max-vertical-offset="685">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="84" selection-start="493" selection-end="493" vertical-scroll-proportion="-9.935484" vertical-offset="330" max-vertical-offset="1958">
+          <folding>
+            <marker date="1389870378546" expanded="true" signature="-1:-1" placeholder="select * fro..tg_user..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/1/member_modify.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="32" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="4" selection-start="99" selection-end="231" vertical-scroll-proportion="0.22481751" vertical-offset="0" max-vertical-offset="726">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/footer.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="17" selection-start="91" selection-end="91" vertical-scroll-proportion="-3.548387" vertical-offset="0" max-vertical-offset="484">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/1/basic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0" vertical-offset="582" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/title.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.032738097" vertical-offset="0" max-vertical-offset="672">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/header.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="32" selection-start="566" selection-end="566" vertical-scroll-proportion="0.22919708" vertical-offset="261" max-vertical-offset="946">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/member.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="4" selection-start="1179" selection-end="1179" vertical-scroll-proportion="-23.419355" vertical-offset="0" max-vertical-offset="858">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/1/member.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="238" selection-end="238" vertical-scroll-proportion="0.55307263" vertical-offset="0" max-vertical-offset="716">
+        <state line="14" column="1" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/global.func.php">
+    <entry file="file://$PROJECT_DIR$/style/1/member.inc.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="0" selection-start="2201" selection-end="2201" vertical-scroll-proportion="-8.193548" vertical-offset="2144" max-vertical-offset="2816">
+        <state line="12" column="24" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
+    <entry file="file://$PROJECT_DIR$/message.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="12" selection-start="250" selection-end="250" vertical-scroll-proportion="0.38540146" vertical-offset="0" max-vertical-offset="685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/insert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="10" selection-start="651" selection-end="651" vertical-scroll-proportion="-14.903226" vertical-offset="0" max-vertical-offset="1386">
+        <state line="15" column="5" selection-start="429" selection-end="429" vertical-scroll-proportion="-4.451613" vertical-offset="192" max-vertical-offset="2046">
           <folding>
-            <marker date="1389841287269" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1389958914017" expanded="true" signature="-1:-1" placeholder="SELECT tg_un..tg_user..." />
+            <marker date="1389958914017" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1389958914017" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/member.inc.php">
+    <entry file="file://$PROJECT_DIR$/includes/check.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="39" selection-start="136" selection-end="136" vertical-scroll-proportion="-7.096774" vertical-offset="0" max-vertical-offset="858">
+        <state line="3" column="13" selection-start="21" selection-end="21" vertical-scroll-proportion="-2.1290324" vertical-offset="0" max-vertical-offset="462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/mysql.fun.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="-17.741936" vertical-offset="66" max-vertical-offset="814">
+          <folding>
+            <element signature="n#con_mysql#0;n#!!top" expanded="false" />
+            <element signature="n#select_db#0;n#!!top" expanded="false" />
+            <element signature="n#select_names#0;n#!!top" expanded="false" />
+            <element signature="n#is_repeat#0;n#!!top" expanded="false" />
+            <element signature="n#con_close#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/common.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="380" selection-end="380" vertical-scroll-proportion="-12.064516" vertical-offset="0" max-vertical-offset="1078">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/1/member_message_detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="20" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="48" selection-start="1672" selection-end="1672" vertical-scroll-proportion="1.2113096" vertical-offset="132" max-vertical-offset="4444">
+        <state line="18" column="32" selection-start="598" selection-end="598" vertical-scroll-proportion="-1.9417475" vertical-offset="196" max-vertical-offset="4510">
           <folding>
-            <marker date="1389841203278" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1389841203278" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1389877132837" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/member.php">
+    <entry file="file://$PROJECT_DIR$/insert.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="35" selection-start="973" selection-end="973" vertical-scroll-proportion="0.29464287" vertical-offset="792" max-vertical-offset="1958">
+        <state line="33" column="52" selection-start="1242" selection-end="1242" vertical-scroll-proportion="-23.419355" vertical-offset="0" max-vertical-offset="1386">
           <folding>
-            <marker date="1389842106208" expanded="true" signature="-1:-1" placeholder="select * fro..tg_user..." />
+            <marker date="1389841287269" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/register.func.php">
+    <entry file="file://$PROJECT_DIR$/log_local.text">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="2" selection-start="389" selection-end="389" vertical-scroll-proportion="0.38978103" vertical-offset="151" max-vertical-offset="836">
+        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="685">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="12" selection-start="250" selection-end="250" vertical-scroll-proportion="-8.5161295" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/global.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="9" selection-start="2110" selection-end="2110" vertical-scroll-proportion="-9.32258" vertical-offset="63" max-vertical-offset="792">
+          <folding>
+            <element signature="n#clearCookie#0;n#!!top" expanded="false" />
+            <element signature="n#checkCode#0;n#!!top" expanded="false" />
+            <element signature="n#login_state#0;n#!!top" expanded="false" />
+            <element signature="n#_runtime#0;n#!!top" expanded="false" />
+            <element signature="n#_mysql_string#0;n#!!top" expanded="false" />
+            <element signature="e#546#638#0" expanded="false" />
+            <element signature="n#_alert_back#0;n#!!top" expanded="false" />
+            <element signature="n#_code#0;n#!!top" expanded="false" />
+            <element signature="e#887#956#0" expanded="false" />
+            <element signature="e#1274#1509#0" expanded="false" />
+            <element signature="e#1516#1737#0" expanded="false" />
+            <element signature="e#1745#1997#0" expanded="false" />
+            <element signature="e#2164#2224#0" expanded="false" />
+            <element signature="n#jumpUrl#0;n#!!top" expanded="false" />
+            <element signature="n#test#0;n#!!top" expanded="false" />
+            <element signature="n#renHtml#0;n#!!top" expanded="false" />
+            <element signature="e#2513#2596#0" expanded="false" />
+            <element signature="n#log_local#0;n#!!top" expanded="false" />
+            <element signature="n#_session_destroy#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/insMes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="-5.483871" vertical-offset="160" max-vertical-offset="814">
+          <folding>
+            <marker date="1389971619470" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/member_message_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1471" selection-end="1471" vertical-scroll-proportion="-22.709677" vertical-offset="176" max-vertical-offset="2332">
+          <folding>
+            <marker date="1389967904322" expanded="true" signature="-1:-1" placeholder="SELECT tg_id..tg_message..." />
+            <marker date="1389967904322" expanded="true" signature="-1:-1" placeholder="SELECT tg_un..tg_user..." />
+            <marker date="1389967904322" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1389967904322" expanded="true" signature="-1:-1" placeholder="SELECT tg_fr..tg_message..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="114" selection-start="790" selection-end="829" vertical-scroll-proportion="0.39285713" vertical-offset="462" max-vertical-offset="1672">
+          <folding>
+            <marker date="1389886270906" expanded="true" signature="-1:-1" placeholder="select tg_id..tg_user..." />
+            <marker date="1389886270906" expanded="true" signature="-1:-1" placeholder="select tg_us..tg_user..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/1/member_message.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/member_message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="50" selection-start="3690" selection-end="3690" vertical-scroll-proportion="0.60714287" vertical-offset="1836" max-vertical-offset="2640">
+          <folding>
+            <marker date="1389977210570" expanded="true" signature="664:816" placeholder="SELECT tg_id..tg_message..." />
+            <marker date="1389977210570" expanded="true" signature="1147:1508" placeholder="SELECT tg_fr..tg_message..." />
+          </folding>
         </state>
       </provider>
     </entry>

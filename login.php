@@ -12,7 +12,9 @@
     require ROOT_PATH.'includes/title.inc.php';
     require ROOT_PATH.'includes/login.func.php';
     if(@$_GET['action']=='login'){
+
         checkCode($_POST['yzm'],$_SESSION['code']);
+
         $_clean = array();
         $_clean['userName'] = $_POST['userName'];
         $_clean['password'] = $_POST['password'];
@@ -23,9 +25,16 @@
                 AND tg_password ='".$_clean['password']."'";
 
         if($rows = fetch_array($sql)){
+            query("UPDATE tg_user SET
+                                    tg_last_time=NOW(),
+                                    tg_last_ip='{$_SERVER['REMOTE_ADDR']}',
+                                    tg_login_count=tg_login_count+1
+                                 WHERE
+                                    tg_userName='{$_clean['userName']}'
+                                    ");
+            _setCookies($_clean['userName'],$rows['tg_uniqid'],$_clean['saveTime']);
             con_close();
             session_destroy();
-            _setCookies($rows['tg_userName'],$rows['tg_uniquid'],$_clean['saveTime']);
             jumpUrl(null,"index.php");
         }else{
             con_close();

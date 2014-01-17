@@ -1,8 +1,4 @@
 <?php
-
-
-
-
 if(!defined('IN_TG')){
     exit('Access Denied');
 }
@@ -18,11 +14,17 @@ require ROOT_PATH."includes/global.func.php";
 
 define('START_TIME',_runtime());
 include ROOT_PATH.'includes/mysql.fun.php';
+include ROOT_PATH.'includes/check.inc.php';
+
+
+
 define('DB_HOST','localhost');
 define('DB_USER','root');
 define('DB_PASSWORD','');
 define('DB_NAME','testguest');
 
+
+//
 //define('DB_HOST','localhost');
 //define('DB_USER','yufhlyvm_xiang');
 //define('DB_PASSWORD','a19851985');
