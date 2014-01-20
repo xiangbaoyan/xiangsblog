@@ -12,11 +12,14 @@
     require dirname(__FILE__).'/includes/common.inc.php';
     require ROOT_PATH.'includes/title.inc.php';
     $userName = @$_GET['userName'];
+
+    if(@$_COOKIE['userName'] == $userName){
+       exit("不能给自己发信息");
+    }
+
     if(@$_GET['action']=='write')
     {
         checkCode($_POST['yzm'],$_SESSION['code']);
-        require ROOT_PATH.'includes/check.inc.php';
-
         if(!!$row = fetch_array("SELECT tg_uniqid FROM tg_user WHERE tg_userName='{$_COOKIE['userName']}'"))
         {
             checkUniqid($_COOKIE['uniqid'],$row['tg_uniqid']);
@@ -57,7 +60,7 @@
         <input type="hidden" value="<?php echo $userName?>" name="toUser">
           <div class="form-group">
             <label>
-                <input type="text" class="form-control" value="写给:  <?php echo $userName ?>">
+                <input type="text" readonly class="form-control" value="写给:  <?php echo $userName ?>">
             </label>
           </div>
         <div class="form-group">

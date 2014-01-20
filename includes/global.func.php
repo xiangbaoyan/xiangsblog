@@ -99,6 +99,7 @@ function _sha_code(){
     return sha1(uniqid(rand(),true));
 }
 
+
 /**
  * 带信息跳到指定页面
  * 弹出信息@param $info
@@ -111,7 +112,6 @@ function jumpUrl($info,$url){
         header("location:$url");
     }
 }
-
 function test(){
     echo 'wocao ';
 }
@@ -132,8 +132,9 @@ function log_local($str){
 }
 
 function _session_destroy() {
-    if (session_start()) {
+    if(@session_start()){
         session_destroy();
     }
 }
+
 ?>

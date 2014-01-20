@@ -5,7 +5,7 @@ con_mysql();
 select_db();
 select_names();
 
-query("delete from tg_user;");
+query("delete from tg_article;");
 
 con_close();
 

@@ -24,8 +24,8 @@
                     <div class="panel-heading">其他管理</div>
                     <div class="list-group">
                         <a href='member_message.php' class="list-group-item">短信查阅</a>
-                        <a class="list-group-item">好友设置</a>
-                        <a class="list-group-item">查询花朵</a>
+                        <a href='member_friend.php' class="list-group-item">好友设置</a>
+                        <a href='member_flower.php' class="list-group-item">查询花朵</a>
                         <a class="list-group-item">个人相册</a>
                     </div>
                 </div>

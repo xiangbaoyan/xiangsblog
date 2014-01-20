@@ -30,13 +30,28 @@ define('DB_NAME','testguest');
 //define('DB_PASSWORD','a19851985');
 //define('DB_NAME','yufhlyvm_blog');
 
-
-
-
 con_mysql();
 select_names();
 select_db();
 
+
+if(isset($_COOKIE['userName'])){
+    $sql = "SELECT COUNT(tg_id)
+                 AS count
+               FROM tg_message
+              WHERE tg_toUser='{$_COOKIE['userName']}'
+                AND tg_state=0";
+    $row = mysql_fetch_array(query($sql),MYSQL_ASSOC);
+    if(empty($row['count']))
+    {
+        $GLOBALS['message']= "<strong class='noread'><a href='member_message.php'>(0)</a></strong>";
+
+    }else
+    {
+        $GLOBALS['message']= "<strong class='read'><a href='member_message.php'>({$row['count']})</a></strong>";
+    }
+
+}
 
 
 ?>

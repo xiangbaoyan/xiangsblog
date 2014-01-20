@@ -49,6 +49,12 @@
 require ROOT_PATH."includes/header.inc.php";
 require ROOT_PATH.'includes/member.inc.php';
 $id = @$_GET['me'];
+if($id){
+    $sql="UPDATE tg_message
+             SET tg_state=1
+           WHERE tg_id=$id";
+    query($sql);
+}
 ?>
 <div class="col-md-7" id="detail">
    <?php

@@ -3,13 +3,12 @@
     define('SCRIPT','register');
     session_start();
     require dirname(__FILE__).'/includes/common.inc.php';
-    include ROOT_PATH.'includes/register.func.php';
 
     if(@$_GET['action'] == 'register')
     {
         $_clean =  array();
 
-        $_clean['unicode'] = checkUni($_SESSION['uni'],$_POST['uni']);
+        $_clean['unicode'] = checkUniqid($_SESSION['uniqid'],$_POST['uni']);
         if(!$_POST['yzm'] == $_SESSION['code'])
         {
             _alert_back('验证码不正确');
@@ -65,7 +64,7 @@
         jumpUrl("注册成功",'index.php');
 
     }else{
-        $_SESSION['uni'] = $uni = md5(uniqid(rand(),true));
+        $_SESSION['uniqid'] = $uni = md5(uniqid(rand(),true));
     }
 
 
@@ -178,19 +177,6 @@
 
               </div>
   </div>
-
-
-
-<!--        <div class="panel-heading">会员注册</div>-->
-<!--        <form  class="form-horizontal" role="form">-->
-<!--          <div class="form-group">-->
-<!--            <label for="userName" class="col-md-2">用户名:</label>-->
-<!--            <div class="col-md-4">-->
-<!--                <input type="email" class="form-control " id="userName" placeholder="请输入用户名">-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </form>-->
-
 
 
   <?php

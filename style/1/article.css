@@ -1,0 +1,90 @@
+#author .user{
+    background-color: whitesmoke;
+    color: black;
+    cursor: inherit;
+}
+
+#author dl dd{
+    margin-left: 10px;
+    float: right;
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+div.content img{
+    vertical-align: bottom;
+}
+
+div.content {
+    margin-left: 7px;
+    margin-right: 7px;
+    font-size: 18px;
+    border: 1px groove cadetblue;
+}
+
+
+
+div .content{
+    margin-bottom: 100px;
+}
+
+#reply {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+div.editor {
+    padding-left: 28px;
+}
+
+.title {
+    width: 320px;
+}
+
+
+div.reContent {
+    margin-top: 20px;
+    height: 200px;
+    text-align: left;
+    border-bottom: dashed;
+}
+
+
+.reContent dl {
+    text-align: center;
+    width:150px;
+    float:left;
+    margin-left: 0;
+}
+
+
+.reContent dd.btn{
+    float:left;
+    width:75px;
+    font-size: 12px;
+    padding-left: 16px;
+}
+
+.reContent dd.message{
+    background: url(../../images/x1.gif) no-repeat 3px ;
+}
+.reContent dd.friend{
+    background: url(../../images/x2.gif) no-repeat left ;
+}
+.reContent dd.guest{
+    background: url(../../images/x3.gif) no-repeat 3px ;
+}
+.reContent dd.flower{
+    background: url(../../images/x4.gif) no-repeat left ;
+}
+
+.reContent dd.user {
+    float:none;
+    font-size: 15px;
+}
+
+
+.reContent div.page {
+    text-align: center;
+}

@@ -36,6 +36,9 @@ body {
     font-size: 10px;
 }
 
+nav{
+    float:right;
+}
 .navbar {
     height: 30px;
     margin-top: 80px;
@@ -49,7 +52,35 @@ body {
     text-align: center;
 }
 
+
 .laomao {
      font-family: laomao, Arial, "Helvetica Neue", Helvetica, sans-serif;
      font-size: 18px;
 }
+
+
+#message {
+    margin-top: 12px;
+    width: 30px;
+}
+
+
+.read {
+    background: url("../../images/meg.gif") no-repeat left;
+    padding-left: 20px;
+}
+
+.noread {
+    background: url("../../images/read.gif") no-repeat left;
+    padding-left: 20px;
+}
+
+#center{
+    width:130px;
+}
+
+select {
+    width: 50px;
+
+}
+

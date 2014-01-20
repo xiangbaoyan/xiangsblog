@@ -8,6 +8,32 @@
         define("SCRIPT",'member_message');
         require dirname(__FILE__).'/includes/common.inc.php';
         require ROOT_PATH.'includes/title.inc.php';
+
+
+        if(@$_GET['action']=='delete' && isset($_POST['ids'])){
+            if(!!$_rows = fetch_array("SELECT tg_uniqid
+                                         FROM tg_user
+                                        WHERE tg_userName='{$_COOKIE['userName']}'
+                                        LIMIT 1")){
+                checkUniqid($_rows['tg_uniqid'],$_COOKIE['uniqid']);
+                $ids = _mysql_string(implode(",",$_POST['ids']));
+
+                query("DELETE FROM tg_message
+                             WHERE tg_id
+                                IN ({$ids})");
+
+                if(mysql_affected_rows()){
+                    con_close();
+                    jumpUrl("删除成功","member_message.php");
+                }else{
+                    con_close();
+                    _alert_back("短信删除失败");
+                }
+
+            }else{
+                _alert_back("非法登录");
+            }
+        }
     ?>
 </head>
 <body>
@@ -16,8 +42,9 @@
         require ROOT_PATH.'includes/member.inc.php';
     ?>
     <div class="col-md-7">
+        <form action="?action=delete" method="post">
         <table class="table table-bordered">
-            <thead><tr><th>发信人</th><th>短信内容</th><th>时间</th><th>操作</th></tr></thead>
+            <thead><tr><th>发信人</th><th>短信内容</th><th>时间</th><th>操作</th><th>状态</th></tr></thead>
            <?php
            $pageSize = 5;
            $num = mysql_num_rows(query("SELECT tg_id
@@ -38,6 +65,7 @@
            $sql = "SELECT tg_fromUser,
                           tg_id,
                           tg_content,
+                          tg_state,
                           tg_date
                      FROM tg_message
                     WHERE tg_toUser='{$_COOKIE['userName']}'
@@ -53,7 +81,15 @@
                 <td><a href="member_message_detail.php?me=<?php echo $row['tg_id']?>">
                         <?php echo substr($row['tg_content'],0,20)."..." ?></a></td>
                 <td><?php echo $row['tg_date'] ?></td>
-                <td><label><input type="checkbox" class="check" value="<?php echo $row['tg_id']?>"></td>
+                <td><?php
+                        if($row['tg_state']==1){
+                            echo '已读';
+                        }else{
+                            echo '未读';
+                        }
+
+                    ?></td>
+                <td><label><input type="checkbox" class="check" name="ids[]" value="<?php echo $row['tg_id']?>"></td>
             </tr>
 
 
@@ -68,12 +104,11 @@
                    <i class="glyphicon glyphicon-ok"></i>
                    <span>全选</span>
         </button>
-        <button type="button" class="btn btn-primary" id="btn-delete">
+        <button type="submit" class="btn btn-primary" id="btn-delete">
                <i class="glyphicon glyphicon-remove"></i>
                <span>删除</span>
         </button>
-
-
+        </form>
         <div class="col-md-12 page" >
             <ul class="pagination">
                 <li><a href="member_message.php?page=<?php echo $page-1?>">&laquo;</a></li>

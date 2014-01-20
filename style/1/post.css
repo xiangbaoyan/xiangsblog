@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+#listType {
+    margin-left: 70px;
+    float:left;
+    margin-top: 5px;
+    width: 420px;
+}
+
+#listType input{
+    margin-left: 10px;
+}

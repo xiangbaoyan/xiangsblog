@@ -11,13 +11,19 @@
     </div>
 
     <nav class="navbar navbar-default navbar-right">
-        <div class="collapse navbar-collapse" >
+        <div>
             <ul class="nav navbar-nav">
 
                 <?php
                     if(@$_COOKIE['userName']){?>
                 <li><a href="index.php">首页</a></li>
-                <li><a href="member.php"><?php echo $_COOKIE['userName']?>的个人中心</a></li>
+                <li id="center"><a href="member.php">
+                        <?php echo $_COOKIE['userName']?>个人中心
+                    </a>
+                </li>
+                <li id="message">
+                    <?php echo $GLOBALS['message']?>
+                </li>
                 <li><a href="#">风格</a></li>
                 <li><a href="#">管理</a></li>
                 <li><a href="blog.php">博友</a></li>
