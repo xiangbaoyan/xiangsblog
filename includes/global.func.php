@@ -1,5 +1,11 @@
 <?php
 
+function managerLogin(){
+    if(!isset($_SESSION['admin'])||!isset($_COOKIE['userName'])){
+        _alert_back("非法登录");
+    }
+}
+
 function clearCookie(){
     setcookie('userName','',time()-1);
     setcookie('uniqid','',time()-1);

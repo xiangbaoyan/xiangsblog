@@ -59,10 +59,10 @@ if(!!@$_GET['articleId']){
     $result = query("SELECT tg_userName,tg_content,tg_title,tg_date
                        FROM tg_article
                       WHERE tg_reid='{$_GET['articleId']}'");
-
 }else{
     exit("没有选择文章！！！！！！！！！！");
 }
+
 
 //添加回复
 if(@$_GET['action']=='addRe' && isset($_COOKIE['userName']))
@@ -117,7 +117,6 @@ if(@$_GET['action']=='addRe' && isset($_COOKIE['userName']))
                 ?></span>
         </p>
     </div>
-
 
 <?php
 

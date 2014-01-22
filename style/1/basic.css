@@ -76,7 +76,8 @@ nav{
 }
 
 #center{
-    width:130px;
+    width:118px;
+    padding:0;
 }
 
 select {

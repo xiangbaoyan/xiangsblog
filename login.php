@@ -20,7 +20,7 @@
         $_clean['password'] = $_POST['password'];
         $_clean['saveTime'] = checkTime($_POST['saveTime']);
 
-        $sql = "SELECT tg_userName,tg_uniqid
+        $sql = "SELECT tg_userName,tg_uniqid,tg_level
                 FROM tg_user where tg_userName='".$_clean['userName']."'
                 AND tg_password ='".$_clean['password']."'";
 
@@ -33,12 +33,16 @@
                                     tg_userName='{$_clean['userName']}'
                                     ");
             _setCookies($_clean['userName'],$rows['tg_uniqid'],$_clean['saveTime']);
+
+            if($rows['tg_level']==1)
+            {
+                log_local($rows['tg_userName']);
+                $_SESSION['admin'] = $rows['tg_userName'];
+            }
             con_close();
-            session_destroy();
             jumpUrl(null,"index.php");
         }else{
             con_close();
-            session_destroy();
             jumpUrl("用户名或者密码不正确","login.php");
         };
 
